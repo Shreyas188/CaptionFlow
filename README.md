@@ -1,68 +1,24 @@
-# SmartSight: CaptionNet
+# Image Captioning Using CNN and LSTM
+Caption generation is a challenging artificial intelligence problem where a textual description must be generated for a given photograph.
 
-SmartSight is an advanced image captioning system built using Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks. It processes an input image and generates context-aware, natural language descriptions using deep learning. Ideal for accessibility tools, media tagging, and AI-driven image understanding.
+It requires both methods from computer vision to understand the content of the image and a language model from the field of natural language processing to turn the understanding of the image into words in the right order. Recently, deep learning methods have achieved state-of-the-art results on examples of this problem.
 
-## 🔧 Technologies Used
+Deep learning methods have demonstrated state-of-the-art results on caption generation problems. What is most impressive about these methods is a single end-to-end model can be defined to predict a caption, given a photo, instead of requiring sophisticated data preparation or a pipeline of specifically designed models.
 
-* Python
-* TensorFlow / Keras
-* CNN (e.g., InceptionV3 or VGG16)
-* LSTM
-* NLTK / SpaCy for text preprocessing
-* NumPy, Matplotlib, PIL
+Dataset: Flickr 8k : https://www.kaggle.com/adityajn105/flickr8k
+Description: https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip
 
-## 🚀 Features
+### Model
+![1_rfYN2EELhLvp2Van3Jo-Yw](https://user-images.githubusercontent.com/42632417/111032980-f8119600-8434-11eb-8dca-913f52e33d20.jpg)
 
-* Extracts high-level features from images using pretrained CNN models
-* Converts image features to descriptive text using LSTM
-* Supports preprocessing, training, and prediction pipelines
-* Easy to extend for other languages or custom vocabularies
+![download](https://user-images.githubusercontent.com/42632417/111032996-0c559300-8435-11eb-879e-75cca8d961c7.png)
 
-## 📁 Project Structure
 
-```
-Image-Captioning-Using-CNN-and-LSTM/
-├── model/              # Saved models
-├── data/               # Dataset files
-├── utils/              # Preprocessing and helper scripts
-├── train.py            # Model training script
-├── predict.py          # Inference script
-├── app.ipynb           # Demo notebook
-├── requirements.txt    # Required Python packages
-```
 
-## 📦 Installation
+### Final Results:
+![download](https://user-images.githubusercontent.com/42632417/111033154-d5cc4800-8435-11eb-9654-6e6f2ae441b3.png)  ![download](https://user-images.githubusercontent.com/42632417/111033194-fbf1e800-8435-11eb-846a-61b5f2d4e1ec.png) 
 
-1. Clone the repo:
 
-   ```bash
-   git clone https://github.com/your-username/SmartSight-CaptionNet.git
-   cd SmartSight-CaptionNet
-   ```
-2. Install dependencies:
+### Some Fails:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## 🧠 Training
-
-```bash
-python train.py
-```
-
-Make sure to preprocess the dataset using scripts in `utils/` before training.
-
-## 📷 Predicting Captions
-
-```bash
-python predict.py --image path/to/image.jpg
-```
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🔗 Project Link
-
-[GitHub Repository](https://github.com/your-username/SmartSight-CaptionNet)
+![download](https://user-images.githubusercontent.com/42632417/111033307-92bea480-8436-11eb-9f24-5878893c2150.png)![download](https://user-images.githubusercontent.com/42632417/111033310-9ce0a300-8436-11eb-9d09-d1753b577618.png)
